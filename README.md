@@ -9,4 +9,4 @@ For the animation of the shells, the library FlipMove was used.
 ## Screenshots
 
 <img src="./docs/screenshot-1.png" width="500"/>
-![alt text](./docs/game.gif)
+<img src="./docs/game.gif" width="500"/>
