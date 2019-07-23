@@ -4,9 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import FlipMove from 'react-flip-move';
 import shuffle from 'lodash/shuffle';
 
-import pearlShell from '../../assets/pearl-shell.png';
-import closedShell from '../../assets/closed-shell.png';
-import emptyShell from '../../assets/empty-shell.png';
+import { pearlShell, closedShell, emptyShell } from '../../assets';
 import { setResult, setAnimationStop } from '../../actions';
 import { Shell } from '../Shell';
 

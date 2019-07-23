@@ -15,7 +15,7 @@ export const Sand = styled.div`
 	 {
 		position: absolute;
 		width: 100%;
-		height: 301px;
+		height: 320px;
 		background: #ddc58b;
 		margin: 380px 0px;
 
