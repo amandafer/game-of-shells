@@ -97,7 +97,7 @@ const Surface = () => {
 				return [...shells];
 			});
 		}
-	}, [pearlIndex]);
+	}, [isUserPlaying, pearlIndex]);
 
 	return (
 		<FlipMove style={style} staggerDurationBy="30" duration={500}>
