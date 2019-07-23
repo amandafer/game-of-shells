@@ -5,6 +5,7 @@ This project was created using React, React Hooks, Styled Components and Redux.
 For the animation of the shells, the library FlipMove was used.
 
 ## Demo
+https://game-of-shells-1.firebaseapp.com/
 
 ## Screenshots
 
