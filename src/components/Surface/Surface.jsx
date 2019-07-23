@@ -13,11 +13,9 @@ const style = {
 	display: 'flex',
 	flexWrap: 'wrap',
 	width: '100%',
-	height: '300px',
 	flexDirection: 'row',
-	bottom: 0,
+	bottom: '80px',
 	justifyContent: 'center',
-	alignItems: 'baseline',
 	zIndex: 100
 };
 
