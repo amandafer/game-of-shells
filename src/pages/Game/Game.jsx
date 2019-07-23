@@ -11,14 +11,13 @@ import { Container } from '../../components/Background/styles';
 const Game = () => {
 	const dispatch = useDispatch();
 	const [result, isUserPlaying] = useSelector(
-		({ shellReducer: { hasUserWon, isPlaying } }) => [hasUserWon, isPlaying]
+		({ gameReducer: { hasUserWon, isPlaying } }) => [hasUserWon, isPlaying]
 	);
 
 	useEffect(() => {
 		dispatch(setPearlIndex());
 	}, [isUserPlaying]);
 
-	debugger;
 	return (
 		<Container>
 			<h3>{result && 'You win!'}</h3>

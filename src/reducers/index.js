@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import shellReducer from './shellReducer';
+import gameReducer from './gameReducer';
 import animationReducer from './animationReducer';
 
 export default combineReducers({
-	shellReducer,
+	gameReducer,
 	animationReducer
 });

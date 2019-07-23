@@ -4,15 +4,9 @@ import PropTypes from 'prop-types';
 class Shell extends React.Component {
 	render() {
 		const { id, image, onClickHandler } = this.props;
+		const onClick = () => onClickHandler(id);
 
-		return (
-			<img
-				src={image}
-				alt="shell"
-				onClick={() => onClickHandler(id)}
-				width="200px"
-			/>
-		);
+		return <img src={image} alt="shell" onClick={onClick} width="200px" />;
 	}
 }
 
