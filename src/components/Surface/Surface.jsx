@@ -9,11 +9,19 @@ import closedShell from '../../assets/closed-shell.png';
 import emptyShell from '../../assets/empty-shell.png';
 import { setResult, setAnimationStop } from '../../actions';
 import { Shell } from '../Shell';
+import { isAbsolute } from 'path';
 
 const style = {
-	display: 'grid',
-	gridRowGap: '50px',
-	gridTemplateColumns: 'repeat(3, 200px)'
+	position: 'absolute',
+	display: 'flex',
+	flexWrap: 'wrap',
+	width: '100%',
+	height: '300px',
+	flexDirection: 'row',
+	bottom: 0,
+	justifyContent: 'center',
+	alignItems: 'baseline',
+	zIndex: 100
 };
 
 const createShells = numberOfShells => {

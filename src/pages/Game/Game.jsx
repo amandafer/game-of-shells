@@ -3,6 +3,10 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { setPearlIndex, reset, setAnimationStart } from '../../actions';
 import { Surface } from '../../components/Surface';
+import Background from '../../components/Background/Background';
+import EnhancedSand from '../../components/Background/Sand';
+import Birds from '../../components/Background/Birds';
+import { Container } from '../../components/Background/styles';
 
 const Game = () => {
 	const dispatch = useDispatch();
@@ -14,10 +18,15 @@ const Game = () => {
 		dispatch(setPearlIndex());
 	}, [isUserPlaying]);
 
+	debugger;
 	return (
-		<>
+		<Container>
 			<h3>{result && 'You win!'}</h3>
-			<Surface />
+			<Background />
+			<EnhancedSand>
+				<Surface />
+				<Birds />
+			</EnhancedSand>
 			{!isUserPlaying ? (
 				<button onClick={() => dispatch(reset())}>Reset</button>
 			) : (
@@ -25,7 +34,7 @@ const Game = () => {
 					Start Game
 				</button>
 			)}
-		</>
+		</Container>
 	);
 };
 

@@ -8,7 +8,6 @@ import {
 
 const initialState = {
 	numberOfShells: 3,
-	// pearlIndex: 1,
 	hasUserWon: false,
 	isPlaying: true
 };
@@ -32,11 +31,11 @@ export default produce((draft = initialState, action) => {
 			break;
 
 		case RESET:
-			draft = {
+			debugger;
+			return {
 				...initialState,
 				pearlIndex: draft.pearlIndex
 			};
-			break;
 
 		default:
 			return draft;
