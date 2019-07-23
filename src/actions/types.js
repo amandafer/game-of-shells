@@ -1,0 +1,7 @@
+export const SET_USERS_ANSWER = 'SET_USERS_ANSWER';
+export const SET_PEARL_INDEX = 'SET_PEARL_INDEX';
+export const GET_GAME_RESULT = 'GET_GAME_RESULT';
+export const RESET = 'RESET';
+
+export const SET_ANIMATION_START = 'SET_ANIMATION_START';
+export const SET_ANIMATION_STOP = 'SET_ANIMATION_STOP';
